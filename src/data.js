@@ -186,18 +186,18 @@ const howTos = [{
 }]
 
 const testimonials = [{
-    name: 'John Doe',
+    name: 'Myat Nyein Khine (Myanmar)',
     image:'testimonials/1.png',
-    testi: 'Lorem ipsum dolor sit amet',
+    testi: 'Very welcoming and one will have a new family',
 },{
-    name: 'John Doe',
+    name: 'Cadiz Quispe Gustavo Pedro (Bolivia)',
     image:'testimonials/2.png',
-    testi: 'Lorem ipsum dolor sit amet',
-},{
+    testi: 'It is a unique experience that young people can live.',
+}/* ,{
     name: 'John Doe',
     image:'testimonials/3.png',
     testi: 'Lorem ipsum dolor sit amet',
-}]
+} */]
 
 const galleries = [
     'gallery/1.jpg',
