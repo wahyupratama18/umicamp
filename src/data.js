@@ -277,7 +277,7 @@ const howTos = [{
 }, {
     name: 'Wait for a notification that you have successfully registered to UM iCamp 2023.',
 }, {
-    name: 'Result Announcement will be on <b>TBA</b> on your UM iCamp 2023 account.'
+    name: 'Result Announcement will be on <b>10 June 2023</b> on your UM iCamp 2023 account.'
 }]
 
 const testimonials = [{
