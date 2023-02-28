@@ -86,22 +86,34 @@ const changeTab = (i) => {
                 </template>
             </div>
 
-            <h4 class="text-xl font-semibold text-center prose mt-4" data-aos="fade-up">Download the flyer <a href="/flyer.jpg" target="_blank">here</a></h4>
+            <h4 class="text-xl font-semibold text-center prose mt-6" data-aos="fade-up">
+                Download the flyer <a href="/flyer.jpg" target="_blank">here</a>
+            </h4>
         </section>
 
         <section id="apply" class="p-8 lg:p-16 min-h-screen umbg bg-yellow-50">
             <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up">How to Apply</h2>
             
-            <div class="prose grid grid-cols-1 max-w-full">
-                <ol class="list-[upper-latin]">
-                    <li v-for="(howTo, i) in howTos" :key="i">
-                        <h3 class="font-semibold" v-html="howTo.name" />
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                <div class="prose max-w-full">
+                    <ol class="list-[upper-latin]">
+                        <li v-for="(howTo, i) in howTos" :key="i">
+                            <h3 class="font-semibold" v-html="howTo.name" />
+    
+                            <ol class="list-decimal" v-if="howTo.lists">
+                                <li v-for="(list, j) in howTo.lists" :key="j" v-html="list" />
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
 
-                        <ol class="list-decimal" v-if="howTo.lists">
-                            <li v-for="(list, j) in howTo.lists" :key="j" v-html="list" />
-                        </ol>
-                    </li>
-                </ol>
+                <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-6 xl:gap-0 items-center">
+                    <iframe class="md:col-span-2 xl:col-span-1 rounded-xl shadow-xl w-full aspect-video" height="315" src="https://www.youtube.com/embed/y1PM29mELz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+                    <a href="https://drive.google.com/file/d/11D4f2iOIs1v0M4D9DGW_iaoECDht3rE_/view" target="_blank" class="justify-self-center">
+                        <Button>Download for PDF</Button>
+                    </a>
+                </div>
             </div>
         </section>
         
