@@ -63,6 +63,33 @@ const changeTab = (i) => {
             </div>
         </section>
 
+        <section id="sdg" class="p-8 lg:p-16 min-h-screen umbg">
+            <h1 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up">Our Support to SDGs</h1>
+
+            <div class="md:grid md:grid-cols-2 gap-6 w-full mt-6">
+                <div class="flex items-center justify-center mb-6 md:mb-0" data-aos="fade-down">
+                    <img v-lazy="'sdg/text.png'" alt="SDG" class="max-h-64">
+                </div>
+
+                <div>
+                    <div class="prose">
+                        <p data-aos="fade-down">
+                            We proudly present UM iCamp 2023 in order to support United Nations' Agenda for Sustainable Development in 2030 and Indonesia's commitment through Presidential Regulation Number 59 of 2017 concerning the Implementation of Achieving Sustainable Development Goals.
+                        </p>
+                        
+                        <p class="mb-2 pb-0" data-aos="fade-down">
+                            We expect to achieve the following goals through UM iCamp:
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-3 gap-4">
+                        <img v-for="(item, index) in [4, 9, 11, 15, 17]" :key="index" v-lazy="`sdg/${item}.png`" alt="SDG" class="max-h-64">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="programs" class="p-8 lg:p-16 umbg bg-slate-50">
             <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Programs`" />
 
@@ -123,7 +150,7 @@ const changeTab = (i) => {
             <h3 class="text-xl font-semibold my-4" v-text="'Important Dates'" data-aos="fade-right" />
 
             <ul>
-                <li class="flex flex-col sm:flex-row md:justify-between mb-2" v-for="(date, i) in dates" :key="i" data-aos="fade-right">
+                <li class="flex flex-col sm:flex-row sm:justify-between mb-2" v-for="(date, i) in dates" :key="i" data-aos="fade-right">
                     <p v-text="date.title" />
                     <span class="text-icamp font-semibold" v-text="date.date" />
                 </li>
@@ -149,12 +176,14 @@ const changeTab = (i) => {
         </section>
 
         <section id="further" class="bg-[url('/gallery/1.jpg')] bg-[center] bg-no-repeat bg-fixed text-white text-center h-[50vh]">
-            <div class="bg-icamp/50 h-full p-8 lg:p-16">
-                <h2 class="text-3xl font-bold mb-6">Apply Now!</h2>
-    
-                <a href="https://seleksi.um.ac.id/intl">
-                    <Button>Click Here</Button>
-                </a>
+            <div class="bg-icamp/50 h-full p-8 lg:p-16 flex items-center">
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold mb-6">Apply Now!</h2>
+        
+                    <a href="https://seleksi.um.ac.id/intl">
+                        <Button>Click Here</Button>
+                    </a>
+                </div>
             </div>
         </section>
 

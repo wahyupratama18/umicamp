@@ -31,6 +31,11 @@ const menus = [{
     text: 'Introduction'
 }, {
     to: '/',
+    anchor: 'sdg',
+    icon: 'trending-up',
+    text: 'SDGs'
+}, {
+    to: '/',
     anchor: 'programs',
     icon: 'format-list-text',
     text: 'Programs'
