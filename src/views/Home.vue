@@ -59,7 +59,7 @@ const changeTab = (i) => {
             <h2 class="text-xl font-bold border-l-4 border-icamp pl-3 mb-4" data-aos="fade-up">UM iCamp Video</h2>
 
             <div class="flex justify-center">
-                <iframe class="aspect-video rounded-lg max-h-80" width="100%" src="https://www.youtube.com/embed/q7iRKjJqRh0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen="" />
+                <iframe class="aspect-video rounded-lg" width="100%" src="https://www.youtube.com/embed/VNB3LPIgcPI" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen="" />
             </div>
         </section>
 
