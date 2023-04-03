@@ -33,15 +33,21 @@ const infos = [{
 
 const dates = [{
     title: 'Open Application',
-    date: '1 May 2023',
+    date: '10 April 2023',
 }, {
-    title: 'Close Application',
-    date: '30 May 2023',
+    title: 'Application Deadline',
+    date: '25 May 2023',
 }, {
-    title: 'Announcement',
+    title: 'Administrative Selection',
+    date: '25 - 30 May 2023'
+}, {
+    title: 'Acceptance Notification',
+    date: '1 June 2023'
+}, {
+    title: 'Payment Deadline',
     date: '10 June 2023'
 }, {
-    title: 'Program',
+    title: 'UM iCamp Program',
     date: '18 - 24 July 2023'  
 }]
 
@@ -256,6 +262,15 @@ const programs = [{
     ]
 }]
 
+const requirements = [
+    'NOT an Indonesian citizen',
+    'Be at least 18 years old and no more than 35 years old',
+    'Enrolled in a Degree/Non-Degree program of a university (undergraduate and graduate)',
+    'Be able to speak in English',
+    'Have a health insurance',
+    'Have a recommendation letter from home university',
+]
+
 const howTos = [{
     name: 'Prepare the following essays:',
     lists: [
@@ -271,13 +286,66 @@ const howTos = [{
         'Declaration Letter to upload. <b>(File .PDF max 1 MB). Please find the format in the Application Form.</b>',
     ]
 }, {
-    name: 'Sign-Up to <a href="https://seleksi.um.ac.id/intl">Apply Now</a>',
+    name: 'Sign-Up to <a href="https://forms.gle/vsSexyb18hLYzix29">Apply Now</a>',
 }, {
     name: 'Follow the instructions given into your account.'
 }, {
     name: 'Wait for a notification that you have successfully registered to UM iCamp 2023.',
 }, {
     name: 'Result Announcement will be on <b>10 June 2023</b> on your UM iCamp 2023 account.'
+}, {
+    name: 'Program Fee: USD $450<br>and Availabe Scholarship for limited seats'
+}]
+
+const schemes = [
+    'Self-Fund',
+    'Scholarship',
+]
+
+const fees = [{
+    coverages: [
+        'Registration fee',
+        'Accommodation during the program',
+        'Breakfast, lunch, dinner during the program',
+        'Merchandise UM iCamp ',
+        'Cultural and social program',
+        'Certificate of participants',
+    ],
+    schemes: [
+        'USD $450',
+        'Waived',
+    ]
+}, {
+    coverages: [
+        'Airfare ticket',
+        'Visa processing fee',
+        'Insurance',
+        'Personal expenses',
+    ],
+    schemes: [
+        'Not waived',
+        'Not waived',
+    ]
+}]
+
+const payments = [{
+    name: 'Client',
+    value: 'Universitas Negeri Malang (UM)',
+}, {
+    name: 'Bank name',
+    value: 'PT. Bank Negara Indonesia (BNI) (Persero) Tbk',
+}, {
+    name: 'Virtual Account',
+    value: '9888855513580001',
+}, {
+    name: 'Branch',
+    value: 'BRAWIJAYA Malang',
+}, {
+    name: 'SWIFT code',
+    value: 'BNINDJAXXX',
+}, {
+    name: 'Customer email',
+    value: 'farida.ariyani@um.ac.id',
 }]
 
 const testimonials = [{
@@ -301,4 +369,4 @@ const galleries = [
     'gallery/4.jpg',
 ]
 
-export { infos, dates, programs, howTos, testimonials, galleries, timelines }
+export { infos, dates, programs, requirements, howTos, schemes, fees, payments, testimonials, galleries, timelines }

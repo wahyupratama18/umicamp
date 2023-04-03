@@ -41,9 +41,24 @@ const menus = [{
     text: 'Programs'
 }, {
     to: '/',
+    anchor: 'requirements',
+    icon: 'clipboard-list-outline',
+    text: 'Requirements'
+}, {
+    to: '/',
     anchor: 'apply',
     icon: 'location-enter',
     text: 'Apply'
+}, {
+    to: '/',
+    anchor: 'fees',
+    icon: 'cash',
+    text: 'Fee'
+}, {
+    to: '/',
+    anchor: 'payments',
+    icon: 'credit-card-outline',
+    text: 'Payment'
 }, {
     to: '/',
     anchor: 'timeline',
@@ -75,7 +90,7 @@ const menus = [{
     </nav>
 
     <div class="fixed bg-slate-100 bottom-0 md:left-0 h-20 md:h-[calc(100%-8rem)] md:inset-y-20 overflow-y-auto z-[16] w-full md:w-40">
-        <div class="grid grid-rows-4 sm:grid-rows-2 grid-flow-col md:grid-flow-row md:grid-cols-1">
+        <div class="grid grid-rows-4 sm:grid-rows-3 grid-flow-col md:grid-flow-row md:grid-cols-1">
             <router-link v-for="(menu, i) in menus" :key="i" v-scroll-to="`#${ menu.anchor }`" :to="menu.to" class="text-icamp p-3 hover:bg-icamp hover:text-slate-100 hover:font-semibold flex flex-col justify-center items-center">
                 <i :class="`mdi mdi-${menu.icon} mdi-24px`"/>
                 <span v-text="menu.text" />

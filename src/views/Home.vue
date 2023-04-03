@@ -2,7 +2,8 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import { ref } from 'vue'
 import Button from '../components/Button.vue'
-import { infos, dates, programs, howTos, testimonials, galleries, timelines } from '../data'
+import { infos, dates, programs, howTos, schemes, fees, payments, testimonials, galleries, timelines, requirements } from '../data'
+import Table from '../components/Table.vue'
 
 const opened = ref(0)
 
@@ -118,6 +119,18 @@ const changeTab = (i) => {
             </h4>
         </section>
 
+        <section id="requirements" class="p-8 lg:p-16 umbg bg-slate-100">
+            <h1 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up">Requirements</h1>
+
+            <div class="prose max-w-full">
+                <ol class="list-[upper-latin]">
+                    <li v-for="(requirement, i) in requirements" :key="i">
+                        <span v-html="requirement" />
+                    </li>
+                </ol>
+            </div>
+        </section>
+
         <section id="apply" class="p-8 lg:p-16 min-h-screen umbg bg-yellow-50">
             <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up">How to Apply</h2>
             
@@ -134,16 +147,53 @@ const changeTab = (i) => {
                     </ol>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-6 xl:gap-0 items-center">
+                <!-- <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-6 xl:gap-0 items-center">
                     <iframe class="md:col-span-2 xl:col-span-1 rounded-xl shadow-xl w-full aspect-video" height="315" src="https://www.youtube.com/embed/y1PM29mELz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
                     <a href="https://drive.google.com/file/d/11D4f2iOIs1v0M4D9DGW_iaoECDht3rE_/view" target="_blank" class="justify-self-center">
                         <Button>Download for PDF</Button>
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
+
+        <section id="fees" class="p-8 lg:p-16 umbg bg-slate-100">
+            <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Program Fee`" />
+
+            <Table>
+                <thead>
+                    <tr class="bg-icamp">
+                        <th v-text="'Coverage'" />
+                        <th v-for="(scheme, i) in schemes" :key="i" v-text="scheme" />
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr v-for="(fee, i) in fees" :key="i">
+                        <td>
+                            <ol class="list-disc ml-4" data-aos="fade-down">
+                                <li v-for="(coverage, j) in fee.coverages" :key="j" v-text="coverage" />
+                            </ol>
+                        </td>
+                        <td v-for="(scheme, j) in fee.schemes" :key="j" v-text="scheme" data-aos="fade-down" />
+                    </tr>
+                </tbody>
+            </Table>
+        </section>
         
+        <section id="payments" class="p-8 lg:p-16 umbg">
+            <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Payment`" />
+
+            <Table>
+                <tbody>
+                    <tr v-for="(payment, i) in payments" :key="i" data-aos="fade-down">
+                        <td v-text="payment.name" />
+                        <td v-text="':'" />
+                        <td v-text="payment.value" />
+                    </tr>
+                </tbody>
+            </Table>
+        </section>
         <section id="timeline" class="p-8 lg:p-16 umbg bg-slate-50">
             <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Tentative Timeline`" />
 
@@ -180,7 +230,7 @@ const changeTab = (i) => {
                 <div class="w-full">
                     <h2 class="text-3xl font-bold mb-6">Apply Now!</h2>
         
-                    <a href="https://seleksi.um.ac.id/intl">
+                    <a href="https://forms.gle/vsSexyb18hLYzix29">
                         <Button>Click Here</Button>
                     </a>
                 </div>
@@ -195,10 +245,12 @@ const changeTab = (i) => {
                 rewind: true,
             }" aria-label="Testimonials carousel">
                 <SplideSlide v-for="(testimonial, index) in testimonials" :key="index" class="flex justify-center px-10 md:px-16">
-                    <div class="grid grid-cols-4 gap-8 items-center">
-                        <img v-lazy="testimonial.image" class="rounded-lg w-full max-h-32">
+                    <div class="grid md:grid-cols-4 gap-8 items-center">
+                        <div class="flex justify-center items-center">
+                            <img v-lazy="testimonial.image" class="rounded-lg aspect-square max-h-32">
+                        </div>
     
-                        <div class="col-span-3">
+                        <div class="md:col-span-3">
                             <h3 class="font-semibold text-xl" v-text="testimonial.name" />
                             <h5 class="italic" v-text="testimonial.testi" />
                         </div>
