@@ -292,7 +292,7 @@ const howTos = [{
 }, {
     name: 'Wait for a notification that you have successfully registered to UM iCamp 2023.',
 }, {
-    name: 'Result Announcement will be on <b>10 June 2023</b> on your UM iCamp 2023 account.'
+    name: 'Result Announcement will be on <b>10 June 2023</b> through UM iCamp 2023 website.'
 }, {
     name: 'Program Fee: USD $450<br>and Availabe Scholarship for limited seats'
 }]

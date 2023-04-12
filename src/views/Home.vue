@@ -23,11 +23,11 @@ const changeTab = (i) => {
                 <h1 class="text-5xl font-bold" data-aos="fade-down">
                     Broaden Your Vistas, Embrace Cultural Diversity
                 </h1>
-                <h3 class="font-medium mt-6" data-aos="fade-up">Connecting people through diverse cultures.</h3>
+                <h3 class="font-medium my-6" data-aos="fade-up">Connecting people through diverse cultures.</h3>
 
-                <!-- <a href="https://knb.kemdikbud.go.id" data-aos="fade-up">
-                    <Button class="text-lg">Apply Now</Button>
-                </a> -->
+                <a href="https://forms.gle/vsSexyb18hLYzix29" data-aos="fade-up">
+                    <Button class="text-lg rounded-full">Apply Now!</Button>
+                </a>
             </div>
         </section>
 
@@ -147,12 +147,12 @@ const changeTab = (i) => {
                     </ol>
                 </div>
 
+                <!-- <a href="https://drive.google.com/file/d/11D4f2iOIs1v0M4D9DGW_iaoECDht3rE_/view" target="_blank" class="justify-self-center">
+                    <Button>Download Booklet (PDF)</Button>
+                </a> -->
                 <!-- <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-1 gap-6 xl:gap-0 items-center">
                     <iframe class="md:col-span-2 xl:col-span-1 rounded-xl shadow-xl w-full aspect-video" height="315" src="https://www.youtube.com/embed/y1PM29mELz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
-                    <a href="https://drive.google.com/file/d/11D4f2iOIs1v0M4D9DGW_iaoECDht3rE_/view" target="_blank" class="justify-self-center">
-                        <Button>Download for PDF</Button>
-                    </a>
                 </div> -->
             </div>
         </section>
