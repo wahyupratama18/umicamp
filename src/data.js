@@ -99,12 +99,6 @@ const timelines = [{
         time: '12.00 - 13.00',
         title: 'Lunch Break'
     }, {
-        time: '12.00 - 13.00',
-        title: 'Lunch Break'
-    }, {
-        time: '13.00 - 15.00',
-        title: 'BIPA Class'
-    }, {
         time: '13.00 - 15.00',
         title: 'BIPA Class'
     }, {
