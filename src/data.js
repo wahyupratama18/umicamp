@@ -274,22 +274,32 @@ const requirements = [
 const howTos = [{
     name: 'Prepare the following essays:',
     lists: [
-        'Your motivation in applying to UM iCamp 2023, what knowledge you seek to gain, and how UM iCamp program would benefit from your attendance. <b>(max. 500 words)</b>.',
-        'Your personal experiences in school or your community as it relates to the previous short essay in no. 1. <b>(max. 500 words)</b>',
+        'Short essay on your motivation in applying for UM iCamp 2023, what knowledge you seek to gain, and how UM iCamp program will be beneficial for you. <b>(max. 500 words)</b>',
+        'Short essay on your favorite activities or interesting experiences in your community that makes you a unique candidate.',
+        // 'Your motivation in applying to UM iCamp 2023, what knowledge you seek to gain, and how UM iCamp program would benefit from your attendance. <b>(max. 500 words)</b>.',
+        // 'Your personal experiences in school or your community as it relates to the previous short essay in no. 1. <b>(max. 500 words)</b>',
     ]
 }, {
     name: 'Prepare the following files:',
     lists: [
-        'A Formal Photo in Color <b>(a passport size photo, 4 cm x 6 cm)</b> to upload. <b>(File *.JPG max. 1 MB)</b>',
-        'Scan of Passport to upload. <b>(File *.jpg max. 1 MB)</b>',
-        'Medical certificate to upload. <b>(Conditional) (File *.JPG max. 1 MB)</b>',
-        'Declaration Letter to upload. <b>(File .PDF max 1 MB). Please find the format in the Application Form.</b>',
+        'A Formal Photo in Color <b>(a passport size photo, 4 cm x 6 cm)</b>. <b>(File *.JPG max. 1 MB)</b>',
+        'Scan of Passport. <b>(File *.jpg max. 1 MB)</b>',
+        'Medical certificate stating that you are in the physical and mental health capacity to join the program. <b>(File *.PDF max. 1 MB)</b>',
+        'Latest academic transcript',
+        'Declaration Letter. <b>(File .PDF max 1 MB)</b>, format could be downloaded <a href="https://docs.google.com/document/d/1EQSFj2tNmnRJzxZGSRBGaNNNWBuwTJAO/view" target="_blank">here</a>.',
+        `An authorized letter of recommendation to join UM iCamp 2023 written by:<br>
+        <ol class="list-disc">
+        <li> a professor / lecturer from your home university;</li>
+        <li> a teacher at school you attended who knows you well; or</li>
+        <li> a supervisor / employer at your work place.</li>
+        </ol>
+        `
     ]
-}, {
+}, /* {
     name: 'Sign-Up to <a href="https://forms.gle/vsSexyb18hLYzix29">Apply Now</a>',
 }, {
     name: 'Follow the instructions given into your account.'
-}, {
+}, */ {
     name: 'Wait for a notification that you have successfully registered to UM iCamp 2023.',
 }, {
     name: 'Result Announcement will be on <b>10 June 2023</b> through UM iCamp 2023 website.'
