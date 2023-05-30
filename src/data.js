@@ -56,49 +56,34 @@ const timelines = [{
     date: 'Monday, 17 July 2023',
     agendas: [{
         time: 'TBA',
-        title: 'Participant Arrival'
+        title: 'Arrival'
+    }, {
+        time: 'TBA',
+        title: 'Registration and Check-in Asrama'
     }]
 }, {
     title: 'Day 1',
     date: 'Tuesday, 18 July 2023',
     agendas: [{
-        time: '08.00 - 10.00',
-        title: 'Registration and Check In'
-    }, {
         time: '10.00 - 11.00',
         title: 'Welcoming Session and Introduction'
     }, {
         time: '11.00 - 12.00',
-        title: 'Lunch Break'
+        title: 'Bahasa Indonesia Introduction'
     }, {
         time: '12.00 - 13.30',
-        title: 'Bahasa Indonesia Introduction'
+        title: 'Lunch Break'
     }, {
         time: '13.30 - 15.00',
         title: 'Campus Tour'
     }, {
-        time: '15.00 - 18.00',
-        title: 'Preparation and Check in Asrama'
-    }, {
         time: '18.00 - 21.00',
-        title: 'Welcoming Gala Dinner'
-    }, {
-        time: '21.00 - 00.00',
-        title: 'Rest'
+        title: 'Welcoming Gala Dinner and Opening Ceremony'
     }]
 }, {
     title: 'Day 2',
     date: 'Wednesday, 19 July 2023',
     agendas: [{
-        time: '07.00 - 08.00',
-        title: 'Breakfast'
-    }, {
-        time: '08.00 - 12.00',
-        title: 'Departure to Campsite'
-    }, {
-        time: '12.00 - 13.00',
-        title: 'Lunch Break'
-    }, {
         time: '13.00 - 15.00',
         title: 'BIPA Class'
     }, {
@@ -107,125 +92,77 @@ const timelines = [{
     }, {
         time: '17.00 - 19.00',
         title: 'Sport and Leisure Activities'
-    }, {
-        time: '19.00 - 21.00',
-        title: 'Dinner'
-    }, {
-        time: '21.00 - 00.00',
-        title: 'Rest'
     }]
 }, {
     title: 'Day 3',
     date: 'Thursday, 20 July 2023',
     agendas: [{
-        time: '07.00 - 08.00',
-        title: 'Breakfast'
-    }, {
         time: '08.00 - 11.00',
-        title: 'Departure to Jatimpark II'
-    }, {
-        time: '11.00 - 12.00',
-        title: 'Lunch Break'
-    }, {
-        time: '12.00 - 16.00',
-        title: 'Explore Jatimpark II'
-    }, {
-        time: '16.00 - 18.00',
         title: 'Departure to Campsite'
     }, {
-        time: '18.00 - 19.00',
-        title: 'Dinner'
+        time: '11.00 - 12.00',
+        title: 'Welcoming Session'
     }, {
-        time: '19.00 - 21.00',
-        title: 'Campfire and Performing Music from Each Countries'
-    }, {
-        time: '21.00 - 00.00',
-        title: 'Rest'
+        time: '12.00 - 16.00',
+        title: 'Gamelan Performance and Training'
     }]
 }, {
     title: 'Day 4',
     date: 'Friday, 21 July 2023',
     agendas: [{
         time: '07.00 - 08.00',
-        title: 'Breakfast'
+        title: 'Exercise'
     }, {
         time: '08.00 - 13.00',
-        title: 'Departure to Wedi Awu'
-    }, {
-        time: '13.00 - 14.00',
-        title: 'Lunch Break'
+        title: 'Traditional Dancing Performance and Training'
     }, {
         time: '14.00 - 16.00',
         title: 'Sports and Leisure Activities'
-    }, {
-        time: '16.00 - 19.00',
-        title: 'Leisure to Village'
-    }, {
-        time: '19.00 - 24.00',
-        title: 'Departure to UM'
-    }, {
-        time: '24.00 - 05.00',
-        title: 'Departure to Bromo'
     }]
 }, {
     title: 'Day 5',
     date: 'Saturday, 22 July 2023',
     agendas: [{
         time: '05.00 - 06.00',
-        title: 'Sunrise Bromo'
+        title: 'Exercise'
     }, {
         time: '08.00 - 13.00',
-        title: 'Bromo Trip (Breakfast Included)'
-    }, {
-        time: '13.00 - 14.00',
-        title: 'Lunch Break'
-    }, {
-        time: '14.00 - 17.00',
-        title: 'Departure to Hotel'
+        title: 'Departure to Wedi Awu Beach'
     }, {
         time: '17.00 - 18.00',
-        title: 'Check in Hotel'
+        title: 'Sports and Leisure Activities'
     }, {
         time: '18.00 - 21.00',
-        title: 'Free time'
+        title: 'Campfire'
     }]
 }, {
     title: 'Day 6',
     date: 'Sunday, 23 July 2023',
     agendas: [{
         time: '07.00 - 08.00',
-        title: 'Breakfast'
+        title: 'Exercise'
     }, {
         time: '09.00 - 12.00',
-        title: 'Indonesian Traditional Dance part I'
+        title: 'Departure to Bromo'
     }, {
         time: '12.00 - 13.00',
-        title: 'Lunch Break'
+        title: 'Bromo Trip'
     }, {
         time: '13.00 - 15.00',
-        title: 'Indonesian Traditional Dance part II'
+        title: 'Bromo Sunset'
     }, {
         time: '15.00 - 18.00',
-        title: 'Preparation for Closing Ceremony'
-    }, {
-        time: '18.00 - 21.00',
-        title: 'Closing Ceremony'
-    }, {
-        time: '21.00 - 00.00',
-        title: 'Rest'
+        title: 'Departure to UM'
     }]
 }, {
     title: 'Day 7',
     date: 'Monday, 24 July 2023',
     agendas: [{
         time: '07.00 - 09.00',
-        title: 'Breakfast'
+        title: 'Free Time'
     }, {
         time: '09.00 - 10.00',
-        title: 'Check Out Hotel'
-    }, {
-        time: '10.00 - 15.00',
-        title: 'Departure to Juanda'
+        title: 'Closing Ceremony'
     }]
 }]
 
@@ -371,6 +308,10 @@ const galleries = [
     'gallery/2.jpg',
     'gallery/3.jpg',
     'gallery/4.jpg',
+]
+
+const sdgs = [
+    'sdgs/1.png',
 ]
 
 export { infos, dates, programs, requirements, howTos, schemes, fees, payments, testimonials, galleries, timelines }

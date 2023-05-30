@@ -17,7 +17,7 @@ const changeTab = (i) => {
         <section id="welcome" class="w-full min-h-screen bg-cover relative text-white bg-[url('/src/assets/background.jpg')] bg-[center_top] bg-no-repeat bg-fixed flex items-center">
             <div class="w-full text-center flex flex-col">
                 <div class="flex items-center justify-center">
-                    <img src="../assets/white-horizontal.png" class="max-h-28 mb-4" />
+                    <img src="https://lh3.googleusercontent.com/fife/APg5EOams8tZlgN2YEOMGqSnMHr62sn7j-pyuBT30ed29DmMoTrLhLE2X20FaGAihilHvEGTXXhImnkzdX4HV8Wo6_WzwwpurNoN_Q0S_zW6cqPUz1IBL8j_O1Cplg8myuZxMOrUPZ01zZ7xeoKlYbLbijYwQhhoKIAPaIVWA-L9K3mqA5K0ZJUCI3MdDjubh3ibvEvUzXmfskAJRJWZUgCWw2ar3oSY-J7VerrMAbwmdup7Kvw9B9RQ8enhApzA72Hv7lLn0h2mslPMQwDT65Ec-xcXdyujqAuH0qN6rjR4bSc92nMjTn_rs9vh4Drm5piNJOCxocqdMk1hloS35BhH25f3xH4h54uYdT2YDZB0SF1kivhbNCsy4PGBot6UmG7etXcyhKjS8c_zrcqPNjz3Hqik_A9SL6XP5PXeZKPNDxHWq-Xf5eL0mCCqm8-piACIJt_V0o12M0m6n2UczAzXdhxIjfO8mvFVI30rU7WsF5SWR6vBUWlFrgI-eqbK3zB2nTMPutK7uRxJ5zKo4bOyXrZwiMBsbbRj4NzR8lwa1IFfSpJI6ilCfvkMYPLa8_4f0_aZXXibebjltDbSslRrMfleosfFkpsRuQg43b5EZOqnIs3ZyI3UiIX-5TNliBEolmoV_6FqOswnRbwmghiYC4HZh-5t1EwW9sOZV9X-m3XwRvmIi68-_cZl8-eRgYrGlOGQAGsLp5vU60dIZK255zEDbK62UAQwLcfBj3Gx-Z7TfbTAkwb2nXCvifi51jnhkGwcKnW-NwfBwN-fX0nQvdECKqA16coG-DfkjDUMZX8dYC4Oj6INCQp9hruQh2wd1onCz5yVjLXVA3ZKZIY_6BjE7SOW1u2gtZO1nAUtfVN16zsH1s_Tr7iKSBpUayEGvMQrpp4PxFDUu19LuMfZdycet_0ViE5Sj1m22MIA3xCEWq8B083iqeGXJ5ASYMeNWltFyrls8nBtJa3MORzDi643uFYKAINQoEjmBH_QQ0zxfkLJ4Hy2Y41qX6FrxxGQWjK-O6GNMSFrsO9tFk9yO2Y310CJ1W46lbjkcDLtgFqeQSmuR-SNiiYdpXkiqoKcOQm90u4ihd5kJwBfYbhpZFClQ0Ud2bAzs1n2ZOGloJ4tc0usZxuplBztFFpdDQZ1nLMaZ-ShvBaDb5KtxQ3lszTdIWlKwO_FJAEgRKlLzIMGAGPtMyh-Wu3zmpOzxteIkK5mm9gLgYQdeLAz_JMUVcLy69qVlFtoMSMpjp4j2Q-MrsjJI-9rGWZOkay7J0o9T1z61NxvChu4W_Ew4_q55-dylt3ZXBmATzNidOLG8FlXmSq_fkrg163bSvEG_W1SWAqRbfXFtSulDinz6fyF2MQXVgjRfJYYUgICn__AbpwOO1QKoDJVwFFqlz0kGmWYZe9lBu2aG2-UVuuTnwfM1WB5fUucBHysGjU8fF-dNVVLUoWKoh08YFeQ_DmdZX3MTUi01RLmCffIywwGBl2ssPNIaOi25qbVdKmCrPTSmjo6UMGCoh5EXlRBpuIakT6QorbFjS9oMYDZS0DsjarIm9YZJSCQsygb-QLX=w1060-h901" class="max-h-28 mb-4" />
                 </div>
 
                 <h1 class="text-5xl font-bold" data-aos="fade-down">
@@ -214,18 +214,16 @@ const changeTab = (i) => {
                     </div>
 
                     <div class="px-4 py-3 rounded-b-xl border border-icamp">
-                        <div class="grid grid-cols-4" v-for="(agenda, j) in timeline.agendas" :key="j" v-if="timeline.agendas.length > 0">
-                            <span v-text="agenda.time" />
-                            <span class="col-span-3" v-text="agenda.title" />
-                        </div>
-
-                        <span v-else v-text="'TBA'" />
+                        <ol class="list-decimal list-inside">
+                            <!-- <span v-text="agenda.time" /> -->
+                            <li v-text="agenda.title" v-for="(agenda, j) in timeline.agendas" :key="j" />
+                        </ol>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="further" class="bg-[url('/gallery/1.jpg')] bg-[center] bg-no-repeat bg-fixed text-white text-center h-[50vh]">
+        <section id="further" class="bg-[url('https://lh3.googleusercontent.com/fife/APg5EObeYRBvLz6Ea3o2shYjMznXbq2-pLLLo0JWsBpjMz44LTxn6TOUV4WnLaHOfV6pG7Wh0FMTCjcZg-OZ2NQUIR7P21jgg1jhAwm2p962FW9dKSBjfANmyT8h3TEj1k2xXiTJLsFF35mKYAJQcVPnzaZaMFRUshhzIi_9efiRNVzUyLlMvlsRVq9WCBmGTMb6wRI6QJTFZ3O2bxH4Rrs9o94ABJN20Ze1u0ekUdLSt8F4dr4gowA_G_SWFo9eCHR6PuedcuI6VrOiilmF_e7_K6YNUPeLzUFYd5MJPuENnYIlvpa8umW00I8KvDTp_pPJnMCquhuSp1v49viWI7_9bO2_r8PZN72075iUnFpS2E623lbOCtoM3s1tDLLWTWRNfrMwoRAXXd9gsCohiGyfpHczUmRoozBjpVeroiBW6CS0pwKHg2oyllTNoO45EThsOVLFjA5MmPBg0lbFOLgaQl9oDWTLRYhJhEjgXU0VmB3AsZYwRTJfH6iIdBwTfZ5GNPMj3ercNyJnvXwNFCBnMs882eeDlv3sx6WldZa-5-TltzzG9Bt1AN275g3tCyK4OE6osJPyj7RbWzf3--WBnAodTjcEtUVLqlmZ6LU8EzM6UfhqcP4T0Gbrcmwnx2225tZKuXEIjPsrXSlByVUHuDr95GwsrYsSceGF1wzV8iYzzjMuD-htzpii-OxwbnQMmWzQIqSzlSOyRq1dVTVfx8s9Sl8sLzhrMqcTZCAVIeslPGi6e582L5A-4o4tKK8HVhHrKTsC3PJwHIIX2ZTQlhw8kQKj4otMUKlelilAeplzrAqobgBd4jlZs2GoWpM8SgwpXgjCluPcIB3uo9yjyzCXTauoKwH1fxm38x-yvl0aTGg3QbUnZ45XSNPefP7ByqZEVcg3JtRNwLFYGcuDh6t4k-Vw3I74NnwFm1SkbEkv78r10FRokHlpVsw2j0rMrI52RQc-vKKqF1PILXAiJsMtJVzkf4t-ISnis45Xmywyy_r6e6W6_P5iHeodhcAINJsi4SlFvE_XuUEZyfsrSoUOAr6F4asw7Zrw7-XYSiMKnGDWxGuUg2snESqn8aQyISSMbrz0drB8KH8jRKuMu2-45xB6uytHllLTXfbLTUzcjaFIqQLP7i8I4VjOCUNVfw6kMkJVAqZI3mmv5nU-S52VYhprRiLb0cxwLjtLl5DpnMd9AbW-9aYa3erJkR5bEAX-zmTW-nOYITVwgusyKEzSuRXNek3CnGWzLcBEtE3pC4RomPszKXnfjbveqKg7GxnEmCWg0QBDO3dCFpl5AjK_b0_tJzNXm9HHLXGrCj0xz-lI-gW-W9GUNGopcUBSNe2zYoltH-rnJlwqaf-vbARR198NfxvqD_DaABMV4JEqRNqvM40VuOwMaf1N4OM6NaLfgvg-__yiq_6RgEjS26BYWFEHL1ZjkRuoTWBxi_dwVqCrFqII-Br50Z3XH1zDDPS8RstJ2m0lZi9f1b_fjhub6MJtLRXugiezC6zt5eVA2spxBYts4chFjUspYIZYLTCf1ZRZXFbmZxJAPlvN2GC5x1F8GofQw9hm=w1060-h901')] bg-[center] bg-no-repeat bg-fixed text-white text-center h-[50vh]">
             <div class="bg-icamp/50 h-full p-8 lg:p-16 flex items-center">
                 <div class="w-full">
                     <h2 class="text-3xl font-bold mb-6">Apply Now!</h2>

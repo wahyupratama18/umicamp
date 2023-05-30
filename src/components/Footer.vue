@@ -73,7 +73,6 @@ const socials = [{
                 
                 <div class="md:col-span-2">
                     <iframe title="OIA Address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3387303999907!2d112.61885079999999!3d-7.963902800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6282a9b536fd3%3A0x7f48f86c54b1e45!2sKantor%20Hubungan%20Internasional%20Universitas%20Negeri%20Malang!5e0!3m2!1sid!2sid!4v1665797166712!5m2!1sid!2sid" width="100%" height="200" referrerpolicy="no-referrer-when-downgrade" class="max-w-4xl rounded-lg"></iframe>
-                    
                 </div>
             </div>
         </div>
