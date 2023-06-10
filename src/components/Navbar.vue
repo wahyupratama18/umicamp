@@ -43,7 +43,7 @@ const menus = [{
     to: '/',
     anchor: 'awardees',
     icon: 'seal',
-    text: 'Accepted'
+    text: 'Announcement'
 }, {
     to: '/',
     anchor: 'requirements',

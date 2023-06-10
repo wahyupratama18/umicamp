@@ -120,7 +120,7 @@ const changeTab = (i) => {
         </section>
 
         <section id="awardees" class="p-8 lg:p-16 umbg bg-yellow-50 prose max-w-full">
-            <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Accepted & Reserved Participants`" />
+            <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Selected UM iCamp Participants`" />
 
             <p>
                 The announcement you've been waiting for is finally here! We are pleased to announce the selected & reserved participants of UM iCamp 2023 at the following buttons:
