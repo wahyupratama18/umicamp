@@ -41,6 +41,11 @@ const menus = [{
     text: 'Programs'
 }, {
     to: '/',
+    anchor: 'awardees',
+    icon: 'seal',
+    text: 'Accepted'
+}, {
+    to: '/',
     anchor: 'requirements',
     icon: 'clipboard-list-outline',
     text: 'Requirements'

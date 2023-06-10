@@ -119,6 +119,30 @@ const changeTab = (i) => {
             </h4>
         </section>
 
+        <section id="awardees" class="p-8 lg:p-16 umbg bg-yellow-50 prose max-w-full">
+            <h2 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up" v-text="`Accepted & Reserved Participants`" />
+
+            <p>
+                The announcement you've been waiting for is finally here! We are pleased to announce the selected & reserved participants of UM iCamp 2023 at the following buttons:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
+                <a href="https://bit.um.ac.id/umicamp23_acc" target="_blank" class="text-center">
+                    <Button class="text-lg rounded-full">Accepted</Button>
+                </a>
+                <a href="https://bit.um.ac.id/umicamp23_rsv" target="_blank" class="text-center">
+                    <Button class="text-lg rounded-full">Reserved</Button>
+                </a>
+            </div>
+
+            <p>
+                To all accepted participants, please complete all the confirmation steps before <b>June 12, 2023</b>! Check the instructions sent to your email. 
+            </p>
+            <p>
+                To reserved participants, you will be offered a spot <b>once</b> a participant from the accepted list declines the offer. Otherwise, refer to the instruction sent to your e-mail to skip all the waiting and join us in UM iCamp 2023 right away!
+            </p>
+        </section>
+
         <section id="requirements" class="p-8 lg:p-16 umbg bg-slate-100">
             <h1 class="text-3xl font-bold border-l-4 border-icamp pl-3" data-aos="fade-up">Requirements</h1>
 
@@ -228,7 +252,7 @@ const changeTab = (i) => {
                 <div class="w-full">
                     <h2 class="text-3xl font-bold mb-6">Apply Now!</h2>
         
-                    <a href="https://forms.gle/vsSexyb18hLYzix29">
+                    <a href="https://forms.gle/vsSexyb18hLYzix29" disabled>
                         <Button>Click Here</Button>
                     </a>
                 </div>
